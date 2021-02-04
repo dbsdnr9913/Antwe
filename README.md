@@ -23,3 +23,6 @@ If you look our project result, Don't be disappointed!
 It's ok :)    We are learned programming skill like Locket booster. 
 
 Be Expectiong our future.
+
+
+Using Programming language: `html` `css` `javascript` `python` `R` `MYSQL`
