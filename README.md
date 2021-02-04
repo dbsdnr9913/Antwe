@@ -25,4 +25,8 @@ It's ok :)    We are learned programming skill like Locket booster.
 Be Expectiong our future.
 
 
+
+
+
+
 Using Programming language: `html` `css` `javascript` `python` `R` `MYSQL`
