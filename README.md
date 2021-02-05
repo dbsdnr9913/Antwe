@@ -14,9 +14,9 @@
 -Finally, Inspecting project 
 
 
-** We are making all of this No framework No library! 
+** We are making all of this No framework! 
 
-** Yes, We are Newbie (not all) So, Working 'No framework and No library' is very difficult and annoying. But We are belive that this method will improve to our skill.
+** Yes, We are Newbie (not all) So, Working 'No framework' is very difficult and annoying. But We are belive that this method will improve to our skill.
 
 If you look our project result, Don't be disappointed! 
 
