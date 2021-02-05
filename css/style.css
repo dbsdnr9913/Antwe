@@ -51,6 +51,7 @@ body {
   font-size:150%;
   color:white;
   font-weight: bold;
+  user-select: none;
 }
 
 
@@ -162,10 +163,11 @@ body {
   color: white;
   font-size: 40px;
   font-weight: bold;
+  user-select: none;
 }
 
 .text1:hover {
-  color:white;
+  color:gold;
 }
 
 
@@ -194,6 +196,7 @@ body {
   display: flex;
   background-color:white;
   margin-bottom: 20px;
+  user-select: none;
 }
 .flex-container > div {
   background-color:white;
@@ -229,6 +232,7 @@ body {
   background-color: black;
   color:white;
   margin: 5px;
+  user-select: none;
 }
 
 .column_text {
@@ -416,6 +420,9 @@ textarea {
   .container table td {
     font-size: 12px;
   }
+
+
+  /* qna 폼 */
   
   fieldset {
     width: 100%;
