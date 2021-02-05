@@ -17,7 +17,7 @@ body {
 .navi {
   display:block;
   height: 60px;
-  background-color: black;
+  background-color:black;
   width: 100%;
 }
 
@@ -49,7 +49,7 @@ body {
 
 .logo b {
   font-size:150%;
-  color: white;
+  color:white;
   font-weight: bold;
 }
 
@@ -157,9 +157,9 @@ body {
 .text1 {
   position: relative;
   text-align: center;
-  bottom: 120px;
+  bottom: 80px;
   width: 100%;
-  color: gold;
+  color: white;
   font-size: 40px;
   font-weight: bold;
 }
@@ -168,14 +168,7 @@ body {
   color:white;
 }
 
-.text2 {
-  position: relative;
-  text-align: center;
-  bottom: 100px;
-  width: 100%;
-  color: white;
-  font-size: 15px;
-}
+
 
 .slideBar {
   -webkit-animation-name: project;
@@ -185,12 +178,12 @@ body {
 }
 
 @-webkit-keyframes project {
-  from {opacity: 0.4;} 
+  from {opacity: 0.6;} 
   to {opacity: 1;}
 }
 
 @keyframes project {
-  from {opacity: 0.4;}
+  from {opacity: 0.6;}
   to {opacity: 1;}
 }
 
@@ -203,30 +196,25 @@ body {
   margin-bottom: 20px;
 }
 .flex-container > div {
-  background-color: white;
-  margin: 0 50px;
+  background-color:white;
+  color:black;
+  margin: 0 ;
   padding: 0;
   font-size: 15px;
   text-align: middle;
   border-radius: 10px;
   position: relative;
   animation-name: ani;
-  animation-duration: 22s;
+  animation-duration: 25s;
   animation-iteration-count:infinite;
   animation-direction:initial;
   font-weight: bold;
 }
 
-.flex-container > div > b {
-  color:red;
-}
 
-.flex-container > div > span {
-  color:blue;
-}
 
 @keyframes ani {
-  0% {left:-120%; right:0%}
+  0% {left:-50%; right:0%}
   100% {left:100%; right:0%}
 } 
 
@@ -318,7 +306,7 @@ body {
 .mainScreen {
   display:block;
   float: left;
-  width: 60%;
+  width: 63%;
   margin: 5px;
   background-color: white;
   height: 100%;

@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(slideShow, 5000);
   }
 
+
+
+  // Q & A 내용 미입력시 알람 설정 
+
   const submits = document.querySelector('#submit');
   const textArea = document.querySelector('#subject');
   const Fname = document.querySelector('#Fname');
@@ -40,4 +44,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
+// 좌측 슬라이드 글자 클릭시 해당 내용으로 이동 
 
+let locationtable = document.querySelector('table').offsetTop;
+let locationqna = document.querySelector('fieldset').offsetTop;
+let locationCimg = document.querySelector('.container_img').offsetTop;
+
+
+function scrollWindow0() {
+  window.scrollTo({top: locationtable - 500 , behavior:'smooth'});
+}
+
+function scrollWindow1() {
+  window.scrollTo({top:locationCimg , behavior:'smooth'});
+}
+
+function scrollWindow2() {
+  window.scrollTo({top: locationqna + 1000 , behavior:'smooth'});
+}

@@ -33,32 +33,25 @@
   <div class = "slide">
     <div class = "slideBar fade">
       <img src = "images/project_img1.jpg">
-      <div class = "text1">최고의 전문가와 함께 하세요</div>
-      <div class = "text2">프로그래밍 전문가, 수학 전문가, 경제 전문가가 당신과 함께 합니다.</div>
+      <div class = "text1">고객의 입맛에 맞는 최고의 맛집을 소개합니다</div>
+      
     </div>
     <div class = "slideBar fade">
       <img src = "images/project_img2.jpg" >
-      <div class = "text1">최고의 수익률을 올리세요</div>
-      <div class = "text2">치밀하고 다양한 분석을 통해 당신의 수익을 책임집니다.</div>
+      <div class = "text1">맛과 영양을 모두 꼼꼼히 따집니다</div>
+     
     </div>
     <div class = "slideBar fade">
       <img src = "images/project_img3.jpg" >
-      <div class = "text1">저희들도 당신과 함께 합니다.</div>
-      <div class = "text2">365일, 24시간 언제나 당신 곁에서 당신의 성공을 응원합니다.</div>
+      <div class = "text1">최고의 전문가가 당신과 함께 합니다</div>
+      
     </div>
   </div>
 
   <!-- 하단 이미지 슬라이드 -->
 
   <div class = "flex-container">
-      <div>삼성전자 <b>+16p</b></div>
-      <div>sk하이닉스 <span>-22p</span></div>
-      <div>현대자동차 <b>+53p</b></div>
-      <div>포스코케미칼 <b>+74p</b></div>
-      <div>셀트룩스 <b>+23p</b></div>
-      <div>삼성물산 <span>-4p</span></div>
-      <div>코오롱스포츠 <b>+3p</b></div>
-      <div>카카오 <b>+8p</b></div>
+      <div>※공지: 시스템 보수 기간 입니다!</div>
   </div>
 
   <!-- 좌측 메인 -->
@@ -72,10 +65,10 @@
       <div class = "sidebar_border">
         <h2>Contents</h2>
         <hr class ="hr">
-        <a href = "#">게시판</a>
-        <a href = "#">빅데이터 분석</a>
-        <a href = "#">재무제표 분석</a>
-        <a href = "#">Q & A</a>
+        <a onclick="scrollWindow0()">게시판</a>
+        <a onclick="scrollWindow1()">맛집 검색</a>
+        <a onclick="scrollWindow1()">데이트 코스 추천</a>
+        <a onclick="scrollWindow2()">Q & A</a>
       </div>
     </div>
     <div class = "sidebar">
@@ -86,6 +79,7 @@
       </div>
     </div>
   </div>
+  
   <!-- 우측 메인 -->
 
   <div class = "mainScreen">
@@ -173,22 +167,21 @@
             <input type = "text" id = "Fname" placeholder="Your First Name is..."><br></br>
             <label for = "lastName">LastName:</label>
             <input type = "text" id = "Lname" placeholder="Your Last Name is..."><br></br>
-            <label for = "Country">Coutry</label>
+            <label for = "Country">Country:</label>
             <select id = "Cname">
               <option value="KOREA">KOREA</option>
               <option value="JAPAN">JAPAN</option>
               <option value="AMERICA">AMERICA</option>
               <option value="CHINA">CHINA</option>
             </select><br></br>
-            <label for ="subject">subject</label><br></br>
+            <label for ="subject">Subject</label><br></br>
             <textarea id = "subject" placeholder="text here..." style="width:100%"></textarea>
             <input type="submit" value = "submit" id ="submit">
         </fieldset>
       </form>
     </div>
   </div>
-
   
-  <script src = "folder1/index.js"></script>
+<script src = "js/index.js"></script>
 </body>
 </html>
