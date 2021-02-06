@@ -48,16 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let locationtable = document.querySelector('table').offsetTop;
 let locationqna = document.querySelector('fieldset').offsetTop;
-let locationCimg = document.querySelector('.container_img').offsetTop;
+
 
 
 function scrollWindow0() {
   window.scrollTo({top: locationtable - 500 , behavior:'smooth'});
 }
 
-function scrollWindow1() {
-  window.scrollTo({top:locationCimg , behavior:'smooth'});
-}
+
 
 function scrollWindow2() {
   window.scrollTo({top: locationqna + 1000 , behavior:'smooth'});

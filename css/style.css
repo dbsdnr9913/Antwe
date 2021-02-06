@@ -377,48 +377,148 @@ textarea {
 } 
 
 @media (max-width: 767px) {
-  .mainScreen {
-    display:block;
-    float: left;
-    width: 100%;
-    margin: 5px;
-    background-color: white;
+    .mainScreen {
+      display:block;
+      float: left;
+      width: 100%;
+      margin: 5px;
+      background-color: white;
+      height: 100%;
+    }
+    
+    .container {
+      display:block;
+      margin: 20px;
+    }
+    
+    .container_img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .container_text {
+      text-align: center;
+      font-size: 13px;
+    }
+    
+    .container table {
+      background-color: white;
+      color: black;
+      width: 100%;
+    }
+    
+    .container table tr:hover {
+      background-color:lavender;
+      cursor: pointer;
+    }
+    
+    .container table th {
+      font-size: 15px;
+    }
+    
+    .container table td {
+      font-size: 12px;
+    }
+  }  
+  /* login 폼 */
+
+ .loginForm {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    position: relative;
+    display: block;
     height: 100%;
-  }
-  
-  .container {
-    display:block;
     margin: 20px;
   }
-  
-  .container_img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+  .login_container:after {
+    display:table;
+    clear:both;
+    content: "";
   }
-  
-  .container_text {
-    text-align: center;
-    font-size: 13px;
+
+  .column_login {
+    display:block;
+    float:left;
+    width: 48%;
+    padding: 10px;
+    margin: 5px;
   }
-  
-  .container table {
-    background-color: white;
-    color: black;
+
+  .btn, input {
+    display:inline-block;
     width: 100%;
+    margin-top: 5px;
+    padding:5px;
+    font-size: 20px;
+    opacity: 0.8;
+    border-radius: 5px;
   }
-  
-  .container table tr:hover {
-    background-color:lavender;
+
+  .btn:hover, input:hover {
+    opacity: 1;
+  }
+
+  input[type="submit"] {
+    background-color:greenyellow;
+    font-weight: bold;
     cursor: pointer;
+    padding: 10px;
   }
-  
-  .container table th {
-    font-size: 15px;
+
+ 
+  .facebook {
+    width: 100%;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #3B5998;
+    color:white;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px;
+    opacity: 0.85;
+    border-radius: 5px;
   }
-  
-  .container table td {
-    font-size: 12px;
+
+  .facebook:hover {
+    opacity: 1;
+  }
+
+  .instagram {
+    width: 100%;
+    font-size: 20px;
+    display: inline-block;
+    background-color: pink;
+    color:white;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px;
+    opacity: 0.85;
+    border-radius: 5px;
+  }
+
+  .instagram:hover {
+    opacity: 1;
+  }
+
+
+  .twitter {
+    width: 100%;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #55ACEE;
+    color:white;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px;
+    opacity: 0.85;
+    border-radius: 5px;
+  }
+
+  .twitter:hover {
+    opacity: 1;
   }
 
 
@@ -449,4 +549,4 @@ textarea {
     width: 300px;
   } 
   
-}
+
