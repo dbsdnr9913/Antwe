@@ -149,22 +149,27 @@
     <div class = "loginForm">
       <div class = "login_container">
         <h3 style="text-align: center;">Welcome to Antwe</h3>
-        <div id = "vertical">or</div>
+        <div class = "vertical">
+          <div id = "vertical_text"></div>
+        </div>
         <div class = "column_login">
           <a href="#" class = "facebook">
             <i class = "fa fa-facebook fa-fw"></i>Login with Facebook
           </a>
           <a href="#" class = "instagram">
-            <i class = "fa fa-instagram fa-fw"></i>Login with instagram
+            <i class = "fa fa-instagram fa-fw"></i>Login with Instagram
           </a>
           <a href="#" class = "twitter">
-            <i class = "fa fa-twitter fa-fw"></i>Login with twitter
+            <i class = "fa fa-twitter fa-fw"></i>Login with Twitter
           </a>
         </div>
         <div class = "column_login">
-          <input type="text" name = "userName" placeholder="UserName">
-          <input type="text" name = "password" placeholder="password">
-          <input type="submit" value="Login">
+          <input type="text" placeholder="UserName" id ="userName"><p class ="output"></p>
+          <input type="text" placeholder="password" id ="password"><p class ="output"></p>
+          <div class = "column_submit">
+            <input type="submit" value="Login" id = "login">
+            <input type="submit" value="Sign up" id = "signup">
+          </div>
         </div>
       </div>
     </div>
@@ -173,9 +178,9 @@
         <fieldset>
           <legend>Q&A</legend>
             <label for = "firstName">FirstName:</label>
-            <input type = "text" id = "Fname" placeholder="Your First Name is..."><br></br>
+            <input type = "text" id = "Fname" placeholder="Your First Name is..."><p class ="output"></p><br></br>
             <label for = "lastName">LastName:</label>
-            <input type = "text" id = "Lname" placeholder="Your Last Name is..."><br></br>
+            <input type = "text" id = "Lname" placeholder="Your Last Name is..."><p class ="output"></p><br></br>
             <label for = "Country">Country:</label>
             <select id = "Cname">
               <option value="KOREA">KOREA</option>
@@ -184,8 +189,8 @@
               <option value="CHINA">CHINA</option>
             </select><br></br>
             <label for ="subject">Subject</label><br></br>
-            <textarea id = "subject" placeholder="text here..." style="width:100%"></textarea>
-            <input type="submit" value = "submit" id ="submit">
+            <textarea id = "subject" placeholder="text here..." style="width:100%"></textarea><p class ="output"></p>
+            <input type="button" value = "submit" id ="submit">
         </fieldset>
       </form>
     </div>

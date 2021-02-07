@@ -442,10 +442,44 @@ textarea {
   .column_login {
     display:block;
     float:left;
-    width: 48%;
+    width: 49%;
     padding: 10px;
     margin: 5px;
   }
+
+  .column_submit {
+    width: 100%;
+  }
+
+  .column_submit #login {
+    width: 49.4%;
+  }
+
+  .column_submit #signup {
+    width: 49.4%;
+  }
+
+
+  .vertical {
+    position: absolute;
+    left: 50%;
+    transform: translate(-3px,-3px);
+    border: 1px solid black;
+    height: 70%;
+  }
+
+
+  #vertical_text {
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    background-color:green;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+
 
   .btn, input {
     display:inline-block;
@@ -522,6 +556,8 @@ textarea {
   }
 
 
+
+
   /* qna 폼 */
   
   fieldset {
@@ -548,5 +584,15 @@ textarea {
     height: 200px;
     width: 300px;
   } 
-  
 
+  #submit {
+    background-color: gray;
+  }
+  
+  .output {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+ 
