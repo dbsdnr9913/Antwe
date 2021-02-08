@@ -125,3 +125,22 @@ function scrollWindow0() {
 function scrollWindow2() {
   window.scrollTo({top: locationqna + 1000 , behavior:'smooth'});
 }
+
+
+// 스크롤시 하단 검색 이미지 나타나는 이벤트
+
+let locationBoard = document.querySelector('.search_board').offsetTop;
+const searchBoard = document.querySelector('.search_board');
+
+function displayBoard () {
+  if (scrollY > 713) {
+    searchBoard.style.display = 'block';
+    window.scrollTo({top:locationBoard + 2300, behavior: 'smooth'});
+    if (scrollY > 1470) {
+      window.removeEventListener('scroll', displayBoard)
+    }
+  }
+}
+
+
+window.addEventListener('scroll', displayBoard);
