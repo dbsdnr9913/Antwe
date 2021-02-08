@@ -133,9 +133,9 @@ let locationBoard = document.querySelector('.search_board').offsetTop;
 const searchBoard = document.querySelector('.search_board');
 
 function displayBoard () {
-  if (scrollY > 713) {
+  if (scrollY > 720) {
     searchBoard.style.display = 'block';
-    window.scrollTo({top:locationBoard + 2300, behavior: 'smooth'});
+    window.scrollBy({top: 3400 , behavior: 'smooth'});
     if (scrollY > 1470) {
       window.removeEventListener('scroll', displayBoard)
     }
