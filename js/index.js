@@ -144,6 +144,8 @@ function displaySearch () {
   if (scrollY > 700) {
     search.style.display = "block";
     document.querySelector('.search_board').style.animate = "board";
+  } else if (scrollY > 800) {
+    window.removeEventListener('scroll', displaySearch);
   }
 }
 
@@ -170,6 +172,8 @@ function displayAbout () {
   if (scrollY > 1900) {
     about.style.display = "block";
     document.querySelector('.about_board').style.animate = "board";
+  } else if (scrollY > 2100) {
+    window.removeEventListener('scroll',displayAbout);
   }
 }
 
