@@ -22,7 +22,7 @@
       <div class = "dropButton">
         <button class = "dropbtn">Menu</button>
         <div class = "dropbtn-content">
-          <a href = "#">LOG IN</a>
+          <a href = "#">HOME</a>
           <a href = "#">ABOUT US</a>
           <a href = "#">CONTACT</a>
         </div>
@@ -67,9 +67,9 @@
         <h2>Contents</h2>
         <hr class ="hr">
         <a onclick="scrollWindow0()">게시판</a>
-        <a onclick="scrollWindow1()">맛집 검색</a>
-        <a onclick="scrollWindow1()">데이트 코스 추천</a>
-        <a onclick="scrollWindow2()">Q & A</a>
+        <a onclick="scrollWindow1()">Q & A</a>
+        <a onclick="scrollWindow2()">맛집 검색</a>
+        <a onclick="scrollWindow3()">ABOUT US</a>
       </div>
     </div>
     <div class = "sidebar">
@@ -195,12 +195,24 @@
       </form>
     </div>
   </div>  
+
+  <!-- 하단 검색 이미지 & ABOUT US 이미지 --> 
+
   <div class = "search_board">
     <div class = "search_text">
       <h4 id = "search_main">맛집을 검색해보세요!</h4>
-      <input type="text" placeholder="다양한 맛집을 검색하세요" id = "search_input">
+      <input type="text" onkeypress="enterKey()"  placeholder="다양한 맛집을 검색하세요" id = "search_input">
     </div>
     <img src="images/seoul.png" class = "search_img">
+  </div>
+  <div class = "about_board">
+    <div class = "about_text">
+      <h5 id = "about_main">ANT WE IS...</h5>
+      <p id = "about_p">
+        This project is our first cooperation project.<br><br> This project of main purpose is presenting solution how embody website, data, graph, image, drop & down, etc.. in studied programming with python, javasript, html-css, sql, R. <br> Working 'No framework' is very difficult and annoying. But We are belive that this method will improve to our skill.<br> Be Expecting our future. <br><br> Thank you for visiting our Website!
+      </p>
+    </div>
+    <img src="images/project_img4.jpg" class = "about_img">
   </div>
   
 <script src = "js/index.js"></script>

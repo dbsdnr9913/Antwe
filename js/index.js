@@ -111,36 +111,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 좌측 슬라이드 글자 클릭시 해당 내용으로 이동 
 
-let locationtable = document.querySelector('table').offsetTop;
-let locationqna = document.querySelector('fieldset').offsetTop;
-
-
+let locationSearch = document.querySelector('.search_board').offsetTop;
+let locationAbout = document.querySelector('.about_board').offsetTop;
+let locationTable = document.querySelector('table').offsetHeight;
+let locationQna = document.querySelector('fieldset').offsetHeight;
 
 function scrollWindow0() {
-  window.scrollTo({top: locationtable - 500 , behavior:'smooth'});
+  window.scrollBy({top: locationTable - 500, behavior:'smooth'});
 }
 
-
+function scrollWindow1() {
+  window.scrollBy({top: locationQna - 300, behavior:'smooth'});
+}
 
 function scrollWindow2() {
-  window.scrollTo({top: locationqna + 1000 , behavior:'smooth'});
+  window.scrollBy({top: locationSearch + 1100 , behavior:'smooth'});
 }
+
+function scrollWindow3() {
+  window.scrollBy({top: locationAbout + 2000 , behavior:'smooth'});
+}
+
+
+
 
 
 // 스크롤시 하단 검색 이미지 나타나는 이벤트
 
-let locationBoard = document.querySelector('.search_board').offsetTop;
-const searchBoard = document.querySelector('.search_board');
+const search = document.querySelector('.search_board');
 
-function displayBoard () {
-  if (scrollY > 720) {
-    searchBoard.style.display = 'block';
-    window.scrollBy({top: 3400 , behavior: 'smooth'});
-    if (scrollY > 1470) {
-      window.removeEventListener('scroll', displayBoard)
-    }
+function displaySearch () {
+  if (scrollY > 700) {
+    search.style.display = "block";
+    document.querySelector('.search_board').style.animate = "board";
+  }
+}
+
+window.addEventListener('scroll', displaySearch);
+
+
+// 하단 검색 이미지 엔터키 이벤트
+
+
+const searchInput = document.querySelector('#search_input');
+
+function enterKey() {
+  if (window.event.keyCode == 13) {
+    alert('테스트 중 입니다.');
   }
 }
 
 
-window.addEventListener('scroll', displayBoard);
+// 스크롤시 하단 자기소개 이미지 나타나는 이벤트
+
+const about = document.querySelector('.about_board');
+
+function displayAbout () {
+  if (scrollY > 1900) {
+    about.style.display = "block";
+    document.querySelector('.about_board').style.animate = "board";
+  }
+}
+
+window.addEventListener('scroll', displayAbout);
