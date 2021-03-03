@@ -20,7 +20,7 @@
 
 If you look our project result, Don't be disappointed! 
 
-It's ok :)    We are learned programming skill like Rocket booster. 
+It's ok :) 
 
 Be Expecting our future.
 
